@@ -1,116 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>OWASP - TCET</title>
-    <style>
-        /* Inline CSS for demonstration purposes */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #212121;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>OWASP - TCET</title>
+        <style>
+            /* Inline CSS for demonstration purposes */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #212121;
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
 
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            width: 80%;
-            max-width: 800px;
-        }
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #333;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                width: 80%;
+                max-width: 800px;
+            }
 
-        .welcome, .login {
-            flex: 1;
-            padding: 20px;
-            border: 2px solid transparent;
-            border-radius: 10px;
-        }
+            .welcome,
+            .login {
+                flex: 1;
+                padding: 20px;
+                border: 2px solid transparent;
+                border-radius: 10px;
+            }
 
-        .welcome {
-            background-color: #007acc;
-        }
+            .welcome {
+                background-color: #007acc;
+            }
 
-        .login {
-            background-color: #333;
-            color: #fff;
-            margin-left: 120px;
-        }
+            .login {
+                background-color: #333;
+                color: #ede4e4; /* Change to a suitable text color */
+                margin-left: 120px;
+            }
 
-        .login form {
-            max-width: 300px;
-            margin: 0 auto;
-        }
+            .login form {
+                max-width: 300px;
+                margin: 0 auto;
+            }
 
-        .login label, .login input {
-            display: block;
-            margin-bottom: 15px;
-            color: #fff;
-        }
+            .login input {
+                display: block;
+                margin-bottom: 15px;
+                color: #000; /* Change to a suitable text color */
+            }
 
-        .login input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #555;
-            border-radius: 5px;
-        }
+            .login label {
+                display: block;
+                color: white;
+            }
 
-        .login button {
-            background-color: #007acc;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
+            .login input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #555;
+                border-radius: 5px;
+            }
 
-    <nav class="navbar">
-        <ul class="navbar-menu">
-            <li class="navbar-item"><a href="#">Home</a></li>
-            <li class="navbar-item"><a href="#">About</a></li>
-            <li class="navbar-item"><a href="#">Services</a></li>
-            <li class="navbar-item"><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+            .login button {
+                background-color: #007acc;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#">Home</a></li>
+                <li class="navbar-item"><a href="#">About</a></li>
+                <li class="navbar-item"><a href="#">Services</a></li>
+                <li class="navbar-item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 
+        <div class="container">
+            <div class="welcome">
+                <h1>Welcome to OWASP TCET</h1>
+                <p>Your trusted source for cybersecurity.</p>
+                <img
+                    src="./OWASP blue-dark theme.png"
+                    alt="OWASP TCET LOGO"
+                    width="300"
+                />
+            </div>
 
-    <div class="container">
-        <div class="welcome">
-            <h1>Welcome to OWASP TCET</h1>
-            <p>Your trusted source for cybersecurity.</p>
-            <img
-                src = "./OWASP blue-dark theme.png"
-                alt="OWASP TCET LOGO"
-                width="300"
-            />
+            <div class="login">
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required />
+                    <label for="password">Password:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                    />
+                    <button type="submit">Login</button>
+                </form>
+            </div>
         </div>
-
-        <div class="login">
-            <h2>Login</h2>
-            <form>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Login</button>
-            </form>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

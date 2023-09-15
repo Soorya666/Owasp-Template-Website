@@ -44,13 +44,18 @@ body {
     text-decoration: none;
     color: #fff; /* Text color */
     font-weight: bold;
-    padding: 45px 20px; /* Spacing around menu items */
+    padding: 10px 20px; /* Reduced padding for the menu items */
     transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
 }
 
 .navbar-item a:hover {
     color: #007acc; /* Hover color */
-    background-color: #fff; /* Background color on hover */
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.1
+    ); /* Transparent background color on hover */
     border-radius: 5px; /* Rounded corners on hover */
     transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
 }
